@@ -1,0 +1,8 @@
+*.pcapng
+out
+frameFormat.h
+
+*.pdf
+*.txt
+
+!CmakeLists.txt
