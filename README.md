@@ -1,1 +1,1 @@
-# TCP-IP experimental stack
+# TCP-IP stack
