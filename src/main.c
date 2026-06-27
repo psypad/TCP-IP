@@ -25,9 +25,26 @@ int main(void){
 
         printf("Received %ld bytes\n", n);
 
-        for(int i = 0; i<n;i++){
-            printf("%02x ", buffer[i]);
+        
+
+        printf("Destination MAC: ");
+        for(int k =0; k<6;k++){
+            printf("%02x ", buffer[k]);
         }
+        printf("\n");
+
+        printf("Source MAC: ");
+        for(int k =6; k<12;k++){
+            printf(" %02x ", buffer[k]);
+        }
+        printf("\n");
+
+        printf("EtherType: ");
+        for(int k =12; k<14;k++){
+            printf("%02x ", buffer[k]);
+        }
+        printf("\n");
+    
 
         printf("\n");
     }  
